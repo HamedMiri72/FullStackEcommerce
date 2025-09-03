@@ -13,10 +13,21 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class CategoryServiceImpl implements CategoryService {
 
+//    private final CategoryRepository repository;
+//
+//    @Override
+//    public CategoryResponse addCategory(CategoryRequest request) {
+//
+//        CategoryEntity newCategory = repository.save(CategoryMapper.toEntity(request));
+//
+//        CategoryResponse response = CategoryMapper.EntityToResponse(newCategory);
+//
+//        return response;
+//    }
+
     private final CategoryRepository repository;
 
-    @Override
-    public CategoryResponse addCategory(CategoryRequest request) {
+    public CategoryResponse addCategory(CategoryRequest request){
 
         CategoryEntity newCategory = repository.save(CategoryMapper.toEntity(request));
 

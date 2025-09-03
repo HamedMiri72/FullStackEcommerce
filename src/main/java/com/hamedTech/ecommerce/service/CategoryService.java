@@ -5,6 +5,6 @@ import com.hamedTech.ecommerce.dto.CategoryResponse;
 
 public interface CategoryService {
 
-    CategoryResponse addCategory(CategoryRequest request);
+  CategoryResponse addCategory(CategoryRequest request);
 
 }
